@@ -15,13 +15,16 @@
 
 	<title>Nina Carducci - Photographe professionnelle à Bordeaux</title>
 	<meta name="description"
-		content="Immortalisez vos souvenirs en profitant de l'expertise de Nina Carducci en shooting photo, retouche et création d'album photo personnalisé.">
+		content="Immortalisez vos souvenirs en profitant de l'expertise de Nina Carducci en shooting photo, retouche photo et création d'album photo personnalisé.">
+
+	<!-- Rich Snippet - Local Business Schema.org -->
 
 	<script type="application/ld+json">
 		{
 		  "@context": "https://schema.org",
 		  "@type": "LocalBusiness",
 		  "name": "Nina Carducci",
+		  "image": "https://raw.githubusercontent.com/qhouguet/OC-Dev-Web_P5_Nina-Carducci/main/assets/images/nina.webp",
 		  "url": "https://qhouguet.github.io/OC-Dev-Web_P5_Nina-Carducci/",
 		  "telephone": "05 56 67 78 89",
 		  "priceRange": "50€-400€",
@@ -52,6 +55,8 @@
 		}
 	</script>
 
+	<!-- Twitter Cards -->
+
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@NinaCarducci">
 	<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle à Bordeaux">
@@ -60,20 +65,26 @@
 	<meta name="twitter:image"
 		content="https://raw.githubusercontent.com/qhouguet/OC-Dev-Web_P5_Nina-Carducci/main/assets/images/nina.webp">
 
+	<!-- OpenGraph Cards  -->
+
 	<meta property="og:title" content="Nina Carducci - Photographe professionnelle à Bordeaux">
 	<meta property="og:site_name" content="Nina Carducci - Photographe professionnelle à Bordeaux">
 	<meta property="og:url" content="https://qhouguet.github.io/OC-Dev-Web_P5_Nina-Carducci/">
-	<meta property="og:description" content="Nina Carducci vous propose de bénéficier de son expertise en tant que
-		photographe professionnelle pour immortaliser vos plus beaux moments.">
+	<meta property="og:description" content="Nina Carducci, photographe professionnelle à Bordeaux.">
 	<meta property="og:type" content="website">
 	<meta property="og:image"
 		content=https://raw.githubusercontent.com/qhouguet/OC-Dev-Web_P5_Nina-Carducci/main/assets/images/nina.webp>
+
+	<!-- Balise meta robots -->
 
 	<meta name="robots" content="index, follow">
 
 </head>
 
 <body>
+
+	<!-- Header (titre + navbar) -->
+
 	<header class="top-header">
 		<h1 class="name">Nina Carducci</h1>
 		<nav class="nav">
@@ -90,7 +101,13 @@
 			</ul>
 		</nav>
 	</header>
+
+	<!-- Main -->
+
 	<main>
+
+		<!-- Carousel : images, boutons... -->
+
 		<div id="header">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
@@ -134,17 +151,19 @@
 				</div>
 
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="prev">
+					data-bs-slide="prev" aria-label="Slide précédente">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
 				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="next">
+					data-bs-slide="next" aria-label="Slide suivante">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
 		</div>
+
+		<!-- Présentation Nina -->
 
 		<section id="about">
 			<div class="picture left">
@@ -169,14 +188,15 @@
 			</div>
 		</section>
 
+		<!-- Galerie -->
+
 		<section id="gallery">
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" loading="lazy"
-						width="440" height="440"
-						alt="Photo d'une foule d'un concert avec vue sur le groupe en train de jouer, la lumière globale est rouge">
+						width="440" height="440" alt="Photo d'une foule d'un concert avec une lumière rouge">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" loading="lazy"
 						width="440" height="440"
@@ -211,6 +231,8 @@
 				</div>
 			</div>
 
+			<!-- Citation -->
+
 			<div class="quote">
 				<figure>
 					<blockquote>
@@ -226,13 +248,14 @@
 			</div>
 		</section>
 
+		<!-- Services -->
+
 		<section id="services">
 			<div class="z-index-mobile">
 				<h2 class="title">Mes services</h2>
 			</div>
 			<div class="container">
 				<div class="service">
-
 					<div class="service__description">
 						<h3>Shooting photo</h3>
 						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace
@@ -271,6 +294,8 @@
 			</div>
 		</section>
 
+		<!-- Citation  -->
+
 		<div class="quote">
 			<figure>
 				<blockquote>
@@ -281,31 +306,32 @@
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
 		</div>
-
-		<footer id="contact">
-			<div class="container">
-				<div class="form-container">
-					<h2>Une question ? Une demande de devis ?</h2>
-					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-					<form method="post">
-						<label for="nom">Nom</label>
-						<input type="text" name="nom" id="nom" aria-labelledby="nom">
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" aria-labelledby="email">
-						<label for="message">Message</label>
-						<textarea name="message" id="message" cols="30" rows="10" aria-labelledby="message"></textarea>
-						<input type="submit" value="Envoyer" aria-label="Envoyer le formulaire">
-					</form>
-
-				</div>
-				<div class="picture right">
-					<img src="./assets/images/camera.webp"
-						alt="Photo d'un appareil photo avec des ombres et une lumière rouge" width="418" height="418"
-						class="mobile-image-size">
-				</div>
-			</div>
-		</footer>
 	</main>
+
+	<!-- Footer -->
+
+	<footer id="contact">
+		<div class="container">
+			<div class="form-container">
+				<h2>Une question ? Une demande de devis ?</h2>
+				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+				<form method="post">
+					<label for="nom">Nom</label>
+					<input type="text" name="nom" id="nom">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					<input type="submit" value="Envoyer" aria-label="Envoyer le formulaire">
+				</form>
+			</div>
+			<div class="picture right">
+				<img src="./assets/images/camera.webp"
+					alt="Photo d'un appareil photo avec des ombres et une lumière rouge" width="418" height="418"
+					class="mobile-image-size">
+			</div>
+		</div>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
